@@ -1,16 +1,21 @@
 body,p,h2,h3,h4,h5 {
 	margin: 0;
 	padding: 0;
-	font-family: Arial;
+	font-family:Arial,Helvetica;
 }
 .clearfix:after {
 	display: table;
 	clear: both;
 	content: "";
 }
+p {
+	color: #656565;
+	font: 11px/16px Arial,Helvetica,Tahoma;
+}
 ul {
 	list-style-type: none;
 	margin: 0;
+	padding: 0;
 }
 .global-width {
 	width:1200px;
@@ -30,12 +35,15 @@ ul {
     height: 15px;
     padding: 10px;
     display: block;
-    background: #666;
+    background: #cd5052;
     color: #fff;
     min-width: 120px;
     border-radius: 6px;
     text-align: center;
     font-size: 13px;
+}
+.button:hover {
+	background: #b40027 
 }
 header {
 	background: #ededed;
@@ -45,7 +53,7 @@ header {
 	background: #fff;
     border-radius: 35px;
     font-size: 20px;
-    color: #666;
+    color: #8D0006;
     width: 55px;
     height: 50px;
     text-decoration: none;
@@ -63,14 +71,11 @@ header {
 	text-decoration: none;
 }
 .global-navigation {
-	background: #999;
+	background: #cd5052;
 	clear: both;
 	height: 30px;
 	padding: 10px 0 0;
 	margin-top: 10px;
-}
-.global-navigation ul {
-	float: left;
 }
 .global-navigation li {
 	float: left;
@@ -99,8 +104,12 @@ header {
 	right: 0;
 }
 .spotlight {
-	height: 300px;
+	height:auto;
 	background: #dcdcdc;
+}
+.spotlight img {
+	width: 100%;
+	height: auto;
 }
 .emergency-wrapper {
 	padding-bottom: 25px;
@@ -112,31 +121,33 @@ header {
     margin: 30px auto 0;
     width: 500px;
     border-radius: 5px;
+    padding: 0 14px;
 }
 .emergency-requirement h2 {
-	background: #666;
     border-radius: 5px 5px 0 0;
-    color: #fff;
+    color: #007a00;
     font-size: 16px;
     margin: 0;
-    padding: 10px 0 4px 5px;
+    padding: 10px 0 4px 4px;
+    background: #e3e3e3;
+    margin:0 -14px 0 -14px;
 }
 .wrap-guideline article {
 	float: left;
 	width: 330px;
 	height: 200px;
-	background: #dcdcdc;
 	margin: 30px 42px 30px 0;
 	padding: 0 10px;
+	border: 1px solid #ccc;
 }
 .wrap-guideline article.last {
 	margin-right: 0;
 }
 .wrap-guideline article h3 {
 	margin: 0;
-	background: #999;
+	background: #e3e3e3;
 	text-align: center;
-	color: #4b4b4b;
+	color: #007a00;
 	margin-right: -10px;
 	margin-left: -10px;
 	padding: 10px 0;
@@ -144,9 +155,10 @@ header {
 	font-size: 16px;
 }
 .global-footer {
-	background: #999;
-	text-align: center;
-	padding: 30px 0;
+	background: #e3e3e3;
+    border-bottom: 5px solid #9f190c;
+    padding: 30px 0;
+    text-align: center;
 }
 .global-footer .logo a {
 	margin: 0 auto;
