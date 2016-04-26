@@ -15,6 +15,7 @@ p {
 ul {
 	list-style-type: none;
 	margin: 0;
+	padding: 0;
 }
 .global-width {
 	width:1200px;
@@ -42,7 +43,7 @@ ul {
     font-size: 13px;
 }
 .button:hover {
-	background: #f32101
+	background: #b40027 
 }
 header {
 	background: #ededed;
@@ -76,9 +77,6 @@ header {
 	padding: 10px 0 0;
 	margin-top: 10px;
 }
-.global-navigation ul {
-	float: left;
-}
 .global-navigation li {
 	float: left;
 	padding: 0 40px 0 40px;
@@ -106,8 +104,12 @@ header {
 	right: 0;
 }
 .spotlight {
-	height: 300px;
+	height:auto;
 	background: #dcdcdc;
+}
+.spotlight img {
+	width: 100%;
+	height: auto;
 }
 .emergency-wrapper {
 	padding-bottom: 25px;
@@ -153,9 +155,10 @@ header {
 	font-size: 16px;
 }
 .global-footer {
-	background: #999;
-	text-align: center;
-	padding: 30px 0;
+	background: #e3e3e3;
+    border-bottom: 5px solid #9f190c;
+    padding: 30px 0;
+    text-align: center;
 }
 .global-footer .logo a {
 	margin: 0 auto;
