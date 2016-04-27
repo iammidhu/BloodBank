@@ -3,7 +3,7 @@
     Register Here
   </div>
   <div class="loginBody">
-    <form name="registerForm" novalidate>
+    <form name="registerForm" ng-submit="register.submitRegisterForm(register.rc)" novalidate>
       <div class="inputBox">
         <label for="name">Full name: </label>
         <input type="text" name="name" ng-model="register.rc.fullName" placeholder="Full name" required>
@@ -21,8 +21,8 @@
         </select>
       </div>
       <div class="errorBox">
-        <div ng-show="rbform.$submitted || rbform.gender.$touched">
-          <div ng-show="rbform.gender.$error.required">Please select gender</div>
+        <div ng-show="registerForm.$submitted || registerForm.gender.$touched">
+          <div ng-show="registerForm.gender.$error.required">Please select gender</div>
         </div>
       </div>
       <div class="inputBox">
@@ -42,8 +42,8 @@
         </select>
       </div>
       <div class="errorBox">
-        <div ng-show="rbform.$submitted || rbform.bGroup.$touched">
-          <div ng-show="rbform.bGroup.$error.required">Please select bloodgroup</div>
+        <div ng-show="registerForm.$submitted || registerForm.bGroup.$touched">
+          <div ng-show="registerForm.bGroup.$error.required">Please select bloodgroup</div>
         </div>
       </div>
       <div class="inputBox">
@@ -86,7 +86,7 @@
       </div>
       <div class="inputBox">
         <button type="button" type="submit" class="submitButton" name="button">Register</button>
-        <button type="button" type="reset" class="resetButton" name="button">Reset</button>
+        <button type="button" type="reset" class="resetButton"ng-click="register.reset(registerForm)">Reset</button>
       </div>
     </form>
     <div class="registerHere">

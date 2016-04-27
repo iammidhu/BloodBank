@@ -1,37 +1,44 @@
 (function() {
-    'use strict';
+  'use strict';
 
-    angular.module('app.register')
-        .controller('RegisterCtrl', RegisterCtrl);
+  angular.module('app.register')
+    .controller('RegisterCtrl', RegisterCtrl);
 
-    function RegisterCtrl() {
+  function RegisterCtrl() {
 
-        /* private vars */
-        var vm = this;
+    /* private vars */
+    var vm = this;
 
-        /* initializations */
-        vm.genderList = [
-          'male',
-          'female'
-        ];
+    vm.genderList = [
+      'male',
+      'female'
+    ];
 
-        vm.groups = [
-            'A+',
-            'O+',
-            'B+',
-            'AB+',
-            'A-',
-            'O-',
-            'B-',
-            'AB-'
-        ];
-        /* view-model methods (put references) */
-        vm.clickActionTest = clickActionTest;
+    vm.groups = [
+      'A+',
+      'O+',
+      'B+',
+      'AB+',
+      'A-',
+      'O-',
+      'B-',
+      'AB-'
+    ];
+    /* view-model methods (put references) */
+    vm.submitRegisterForm = submitRegisterForm;
+    vm.reset = reset;
 
-        /*functions*/
-        function clickActionTest(e) {
-            // handle event
-        }
-
+    function submitRegisterForm(e) {
+      debuuger;
     }
+
+    function reset(registerForm) {
+      if (registerForm) {
+        registerForm.$setPristine();
+        registerForm.$setUntouched();
+
+      }
+    };
+
+  }
 })();
