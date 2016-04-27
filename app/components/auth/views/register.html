@@ -1,0 +1,57 @@
+<div class="loginBox">
+  <div class="loginHeader">
+    Register Here
+  </div>
+  <div class="loginBody">
+    <form name="registerForm">
+      <div class="inputBox">
+        <input type="text" name="name" ng-model="fullName" placeholder="Full name" required="">
+        <div ng-messages="registerForm.fullName.$error">
+          <div ng-message="required">This field is required</div>
+        </div>
+      </div>
+      <div class="inputBox">
+        <select id="soflow" ng-model="gender" required="">
+          <option>Select gender</option>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </div>
+      <div class="inputBox">
+        <input type="text" name="dob" value="" placeholder="date of birth">
+      </div>
+      <div class="inputBox">
+        <select id="soflow">
+          <option>Select blood group</option>
+          <option>A+</option>
+          <option>A-</option>
+          <option>B+</option>
+          <option>B-</option>
+          <option>O+</option>
+          <option>O-</option>
+          <option>AB+</option>
+          <option>AB-</option>
+        </select>
+      </div>
+      <div class="inputBox">
+        <input type="text" name="mobile" value="" placeholder="mobile number">
+      </div>
+      <div class="inputBox">
+        <input type="text" name="email" value="" placeholder="email id">
+      </div>
+      <div class="inputBox">
+        <input type="text" name="password" value="" placeholder="password">
+      </div>
+      <div class="inputBox">
+        <input type="text" name="cpassword" value="" placeholder="confirm your password">
+      </div>
+      <div class="inputBox">
+        <button type="button" type="submit" class="submitButton" name="button">Register</button>
+        <button type="button" type="reset" class="resetButton" name="button">Reset</button>
+      </div>
+    </form>
+    <div class="registerHere">
+      <a ui-sref="app.main.auth">Already registered ? login here . . . </a>
+    </div>
+  </div>
+</div>

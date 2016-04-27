@@ -11,6 +11,8 @@
 
         // app modules
         'app.main',
-        'app.home'
+        'app.home',
+				'app.auth',
+				'app.register'
     ]);
 })();

@@ -1,0 +1,97 @@
+/*Login page */
+.loginBox {
+  text-align: center;
+  margin: 80px auto 12vh auto;
+  padding: 0;
+  border: 1px solid gray;
+  width: 500px;
+}
+.loginHeader {
+  font-size: 20px;
+  color: red;
+  padding: 20px;
+}
+.loginBody {
+  padding: 20px;
+  margin: 0;
+  width: 90%;
+}
+.loginBody input[type='text'] {
+  padding: 10px;
+  border: 1px solid #c4c4c4;
+  height: 15px;
+  width: 200px;
+  font-size: 13px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  box-shadow: 0px 0px 8px #d9d9d9;
+  -moz-box-shadow: 0px 0px 8px #d9d9d9;
+  -webkit-box-shadow: 0px 0px 8px #d9d9d9;
+}
+.loginBody input[type='text']:focus {
+  outline: none;
+  border: 1px solid #7bc1f7;
+  box-shadow: 0px 0px 8px #7bc1f7;
+  -moz-box-shadow: 0px 0px 8px #7bc1f7;
+  -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+}
+.resetButton, .submitButton {
+  padding: 10px;
+  width: 90px;
+  outline: none;
+  border: none;
+  transition: all .2s ease-in-out;
+  display: inline-block;
+  margin-left: 20px;
+}
+.resetButton:focus, .resetButton:active, .resetButton:hover, .submitButton:focus, .submitButton:active, .submitButton:hover {
+  -webkit-box-shadow: 2px 3px 5px 0px rgba(44, 232, 245, 1);
+  -moz-box-shadow: 2px 3px 5px 0px rgba(44, 232, 245, 1);
+  box-shadow: 2px 3px 5px 0px rgba(44, 232, 245, 1);
+  transform: scale(1.1);
+}
+.resetButton, .submitButton {
+  background-color: rgb(230, 230, 230);
+}
+.inputBox, .registerHere {
+  margin-bottom: 30px;
+}
+.registerHere {
+  font-size: 14px;
+  color: blue;
+}
+
+/* Register page */
+
+select#soflow, select#soflow-color {
+  -webkit-appearance: button;
+  -webkit-border-radius: 2px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -webkit-user-select: none;
+  background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+  background-position: 97% center;
+  background-repeat: no-repeat;
+  border: 1px solid #AAA;
+  color: #555;
+  font-size: 12px;
+  overflow: hidden;
+  padding: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 220px;
+}
+select#soflow-color {
+  color: #fff;
+  background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#779126, #779126 40%, #779126);
+  background-color: #779126;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding-left: 15px;
+}
+select:focus {
+  outline: none;
+}
