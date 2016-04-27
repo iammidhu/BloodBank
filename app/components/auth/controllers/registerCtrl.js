@@ -2,10 +2,31 @@
     'use strict';
 
     angular.module('app.register')
-        .controller('RegisterCtrl', ['helpersFactory', AppCtrl]);
+        .controller('RegisterCtrl', RegisterCtrl);
 
-    function RegisterCtrl(helpersFactory) {
+    function RegisterCtrl() {
 
+        /* private vars */
+        var vm = this;
+
+        /* initializations */
+        vm.genderList = [
+          'male',
+          'female'
+        ];
+
+        vm.groups = [
+            'A+',
+            'O+',
+            'B+',
+            'AB+',
+            'A-',
+            'O-',
+            'B-',
+            'AB-'
+        ];
+        /* view-model methods (put references) */
+        vm.clickActionTest = clickActionTest;
 
         /*functions*/
         function clickActionTest(e) {
