@@ -1,0 +1,83 @@
+<section class="sub-page-content global-width clearfix">
+    <h2>Blood Request Form</h2>
+    <form name="rbform" novalidate ng-submit="request.requestBlood(request.rb)">
+        <div class="form-wrap clearfix">
+            <div class="form-field">
+                <label>Parent's Name</label>
+            </div>
+            <div class="form-field">
+                <input type="text" name="uName" ng-model="request.rb.name" required="" />
+                <div ng-show="rbform.$submitted || rbform.uName.$touched">
+	                <div ng-show="rbform.uName.$error.required">Please enter name.</div>
+	            </div>
+            </div>
+        </div>
+        <div class="form-wrap clearfix">
+            <div class="form-field">
+                <label>Suffering From</label>
+            </div>
+            <div class="form-field">
+                <input type="text" name="uDisease" ng-model="request.rb.disease" required=""  />
+                <div ng-show="rbform.$submitted || rbform.uDisease.$touched">
+	                <div ng-show="rbform.uDisease.$error.required">Please enter disease.</div>
+	            </div>
+            </div>
+        </div>
+        <div class="form-wrap clearfix">
+            <div class="form-field">
+                <label>Hospital Address</label>
+            </div>
+            <div class="form-field">
+                <textarea name="uAddress" ng-model="request.rb.address" required="" ></textarea>
+            	<div ng-show="rbform.$submitted || rbform.uAddress.$touched">
+	                <div ng-show="rbform.uAddress.$error.required">Please enter address.</div>
+	            </div>
+            </div>
+        </div>
+        <div class="form-wrap clearfix">
+            <div class="form-field">
+                <label>Blood Group</label>
+            </div>
+            <div class="form-field">
+                <select name="uGroup" ng-model="request.rb.group" required="">
+                	<option value="">---Please select---</option>
+                	<option ng-repeat="group in request.groups" value="{{group}}">{{group}}</option>
+                </select>
+                <div ng-show="rbform.$submitted || rbform.uGroup.$touched">
+	                <div ng-show="rbform.uGroup.$error.required">Please select blood group.</div>
+	            </div>
+            </div>
+        </div>
+        <div class="form-wrap clearfix">
+            <div class="form-field">
+                <label>Contact Number</label>
+            </div>
+            <div class="form-field">
+                <input type="number" name="uNumber" ng-model="request.rb.number" min="0" max="10" required="" />
+                <div ng-show="rbform.$submitted || rbform.uNumber.$touched">
+	                <div ng-show="rbform.uNumber.$error.required">Please enter contact number.</div>
+	            </div>
+	            <div ng-show="rbform.uNumber.$error.number">
+	                <div ng-show="rbform.uNumber.$error.required">Please enter valid number.</div>
+	            </div>
+            </div>
+        </div>
+        <div class="form-wrap clearfix">
+            <div class="form-field">
+                <label>Location</label>
+            </div>
+            <div class="form-field">
+                <input type="text" name="uLocation" ng-model="request.rb.location" required="" />
+            	<div ng-show="rbform.$submitted || rbform.uLocation.$touched">
+	                <div ng-show="rbform.uLocation.$error.required">Please enter location.</div>
+	            </div>
+            </div>
+        </div>
+        <div class="form-wrap clearfix">
+            <div class="form-field align-right">
+                <input type="submit" value="Submit" />
+                <input type="button" value="Reset" ng-click="request.reset(rbform)" />
+            </div>
+        </div>
+    </form>
+</section>
