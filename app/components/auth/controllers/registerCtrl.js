@@ -2,9 +2,9 @@
   'use strict';
 
   angular.module('app.register')
-    .controller('RegisterCtrl', RegisterCtrl);
+    .controller('RegisterCtrl',['signupService', RegisterCtrl]);
 
-  function RegisterCtrl() {
+  function RegisterCtrl(signupService) {
 
     /* private vars */
     var vm = this;
@@ -29,7 +29,11 @@
     vm.reset = reset;
 
     function submitRegisterForm(form) {
-      console.log(form);
+      if(form){
+        debugger;
+        console.log(form);
+        signupService.saveRegisterData();
+      }
     }
 
     function reset(registerForm) {
