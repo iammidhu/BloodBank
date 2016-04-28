@@ -28,8 +28,8 @@
     vm.submitRegisterForm = submitRegisterForm;
     vm.reset = reset;
 
-    function submitRegisterForm(e) {
-      debuuger;
+    function submitRegisterForm(form) {
+      console.log(form);
     }
 
     function reset(registerForm) {
