@@ -36,7 +36,7 @@
       if (registerForm) {
         registerForm.$setPristine();
         registerForm.$setUntouched();
-
+        vm.rc = {};
       }
     };
 

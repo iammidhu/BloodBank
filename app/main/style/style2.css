@@ -11,6 +11,7 @@
   font-size: 20px;
   color: red;
   padding: 20px;
+  border-bottom: 1px solid #FAE0E0;
 }
 .loginBody {
   padding: 20px;
