@@ -27,7 +27,7 @@
   padding: 10px;
   border: 1px solid #c4c4c4;
   height: 15px;
-  width: 200px;
+  width: 160px;
   font-size: 13px;
   border-radius: 4px;
   -moz-border-radius: 4px;
@@ -85,7 +85,7 @@ select#soflow, select#soflow-color {
   padding: 10px;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 220px;
+  width: 180px;
 }
 select#soflow-color {
   color: #fff;

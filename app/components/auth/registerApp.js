@@ -10,14 +10,14 @@
 
   function lazyLoadConfig($ocLazyLoadProvider) {
     var PATHS = {
-      regCtrl: ROOT + '/controllers/registerCtrl.js'
+      regCtrl: ROOT + '/controllers/registerCtrl.js',
     };
 
     $ocLazyLoadProvider.config({
       modules: [{
         name: 'register',
         files: [
-          PATHS.regCtrl,
+          PATHS.regCtrl
         ]
       }]
     });
